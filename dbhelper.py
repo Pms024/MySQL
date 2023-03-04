@@ -5,9 +5,9 @@ class DBhelper:
     def __init__(self):
         try:
             self.conn = mysql.connector.connect(host = 'localhost', user = 'root',
-                                    password = '', database = 'hit-db-demo')
+                                    password = '', database = 'hit-db-demo') #connect with database in xampp MySQL
 
-            self.mycursor = self.conn.cursor()
+            self.mycursor = self.conn.cursor()  #to interact with databse
 
         except:
             print('Some error occured. Could not connect to database')
