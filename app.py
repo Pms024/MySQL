@@ -42,6 +42,7 @@ class Flipkart:
             print('Registration Failed')
         self.menu()
 
+        #retrieving data
     def login(self):
         email = input('Enter the email : ')
         password = input('Enter the password : ')
